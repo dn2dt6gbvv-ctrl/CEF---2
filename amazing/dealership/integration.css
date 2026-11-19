@@ -1,0 +1,22 @@
+/* Additive server dialogs. Main selector layout and Gotham fonts are from the supplied archive. */
+[hidden]{display:none!important}button:disabled{opacity:.45;cursor:not-allowed}button:focus-visible{outline:2px solid #fff;outline-offset:4px}
+#shop-selector .header .selector .arrow-left,#shop-selector .header .selector .arrow-right{background-image:none!important}
+#shop-selector .selector button::before{z-index:0;pointer-events:none}
+#ds-waiting{position:fixed;inset:0;display:grid;place-items:center;color:#fff;font:16px Arial,sans-serif}
+#ds-waiting span{padding:20px 28px;background:#252630;border-radius:16px}
+#ds-overlay{position:fixed;inset:0;display:grid;place-items:center;padding:24px;background:#0004;z-index:10;font-family:'Gotham Pro',Arial,sans-serif;color:#fff}
+#ds-modal{box-sizing:border-box;width:min(660px,100%);padding:40px;background:linear-gradient(145deg,#292b37,#191b23);border:1px solid #5c5c6977;border-radius:32px;box-shadow:0 24px 60px #0006;max-height:94vh;overflow:auto}
+#ds-modal .ds-handle{width:40px;height:5px;border-radius:8px;background:#72738077;margin:-20px auto 24px}
+#ds-modal h2{font-size:30px;line-height:1.2;font-weight:700;margin:0 0 16px}
+#ds-modal p{font-size:15px;line-height:1.5;margin:12px 0;overflow-wrap:anywhere}
+#ds-modal .ds-accent{color:#edce6c;font-weight:600}#ds-modal .ds-note{color:#c6c7cf;font-size:14px}
+#ds-modal-buttons{display:flex;gap:12px;margin-top:28px}
+#ds-modal button{font:600 15px/1.4 'Gotham Pro',Arial,sans-serif;min-height:48px;border:1px solid transparent;cursor:pointer;color:#fff;box-sizing:border-box}
+#ds-modal .ds-yes,#ds-modal .ds-no{flex:1;padding:18px 14px;border-radius:18px}
+#ds-modal .ds-yes{background:#24cd50;color:#102615}#ds-modal .ds-no{background:#34353e;border-color:#6667}
+#ds-modal .ds-choices{display:grid;gap:8px;background:#35364188;padding:6px;border:1px solid #61616d44;border-radius:16px}
+#ds-modal .ds-choice{background:transparent;padding:16px;text-align:left;border-radius:12px;width:100%}
+#ds-modal .ds-choice.selected{background:#6557ed}
+#ds-toast{position:fixed;left:50%;bottom:18%;transform:translateX(-50%);box-sizing:border-box;max-width:85%;width:max-content;padding:16px 24px;background:#252631f5;border:1px solid #78798b;border-radius:12px;color:#fff;text-align:center;z-index:20;font:15px/1.5 'Gotham Pro',Arial,sans-serif}
+@media(max-width:600px){#ds-overlay{padding:20px}#ds-modal{padding:28px 24px;border-radius:24px}#ds-modal h2{font-size:24px}#ds-modal p{font-size:14px}#ds-modal-buttons{gap:8px}#ds-modal .ds-yes,#ds-modal .ds-no{padding:16px 8px;font-size:13px}#ds-toast{max-width:90%;font-size:14px}}
+@media(prefers-reduced-motion:reduce){#shop-selector *{transition:none!important}}
